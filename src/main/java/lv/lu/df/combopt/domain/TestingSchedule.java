@@ -101,6 +101,8 @@ public class TestingSchedule {
         TestingSchedule problem = new TestingSchedule();
         problem.setSolutionId("P1");
 
+        Integer timeLimit = 600;
+
         Platform p1 = new Platform();
         p1.setName("windows");
 
@@ -123,6 +125,7 @@ public class TestingSchedule {
         Device d1 = new Device();
         d1.setName("win-1-x84_64");
         d1.setCompSpeed(1.0);
+        d1.setTimeLimit(timeLimit);
         d1.getPlatforms().add(p1);
         d1.getArchitectures().addAll(List.of(a1, a2));
 
@@ -130,8 +133,6 @@ public class TestingSchedule {
         problem.getPlatforms().add(p1);
         problem.getDevices().add(d1);
         problem.getTests().addAll(List.of(t1, t2));
-
-        problem.setTimeLimit(600);
 
         problem.preprocess();
 
