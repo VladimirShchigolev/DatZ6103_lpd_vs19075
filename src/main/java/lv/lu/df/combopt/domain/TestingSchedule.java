@@ -5,17 +5,17 @@ import ai.timefold.solver.core.api.domain.solution.PlanningScore;
 import ai.timefold.solver.core.api.domain.solution.PlanningSolution;
 import ai.timefold.solver.core.api.domain.solution.ProblemFactCollectionProperty;
 import ai.timefold.solver.core.api.domain.valuerange.ValueRangeProvider;
-import ai.timefold.solver.core.api.score.buildin.hardsoft.HardSoftScore;
+import ai.timefold.solver.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lv.lu.df.combopt.Main;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import static java.lang.Math.max;
 
@@ -27,7 +27,7 @@ public class TestingSchedule {
     private String solutionId;
     private Integer timeLimit;
     @PlanningScore
-    private HardSoftScore score;
+    private HardMediumSoftScore score;
 
     @PlanningEntityCollectionProperty
     private List<TestRun> testRuns = new ArrayList<>();
@@ -49,19 +49,8 @@ public class TestingSchedule {
     private List<Architecture> architectures = new ArrayList<>();
 
     public void print() {
-        /*
-        this.getTests().forEach(test -> {
-            LOGGER.info(test.getName() + "(" + test.getAvgRunTime() + ") - {"
-                    + test.getPlatforms().stream().map(Platform::getName)
-                    .collect(Collectors.joining(", ")) + "}");
-        });*/
         this.getTestRuns().forEach(testRun -> {
-            LOGGER.info(testRun.getId());
-            if (testRun.getTest() != null) {
-                LOGGER.info(testRun.getId() + "{" + testRun.getDevice().getName() + ", " +
-                        testRun.getTest().getName() + ", " + testRun.getPlatform().getName() + ", " +
-                        testRun.getArchitecture().getName() + "}");
-            }
+            LOGGER.info(testRun.toString());
         });
     }
 
@@ -90,7 +79,7 @@ public class TestingSchedule {
             n += max(test.getArchitectureCount(), test.getPlatforms().size());
         }
 
-        for (Integer i = 0; i < n; i++) {
+        for (Integer i = 1; i <= n; i++) {
             TestRun testRun = new TestRun();
             testRun.setId("run#"+i.toString());
             this.getTestRuns().add(testRun);
@@ -101,10 +90,13 @@ public class TestingSchedule {
         TestingSchedule problem = new TestingSchedule();
         problem.setSolutionId("P1");
 
-        Integer timeLimit = 600;
+        Integer timeLimit = 560;
 
-        Platform p1 = new Platform();
-        p1.setName("windows");
+        Platform windows = new Platform();
+        windows.setName("windows");
+
+        Platform linux = new Platform();
+        linux.setName("linux");
 
         Architecture a1 = new Architecture();
         a1.setName("x86");
@@ -113,26 +105,38 @@ public class TestingSchedule {
         a2.setName("x86_64");
 
         Test t1 = new Test();
-        t1.setName("CodeStyle");
-        t1.setAvgRunTime(60);
-        t1.getPlatforms().add(p1);
+        t1.setName("CodeStyleCheck");
+        t1.setAvgRunTime(200);
+        t1.getPlatforms().addAll(List.of(windows, linux));
 
         Test t2 = new Test();
         t2.setName("CheckIfCompiles");
         t2.setAvgRunTime(300);
-        t2.getPlatforms().add(p1);
+        t2.getPlatforms().addAll(List.of(windows, linux));
 
-        Device d1 = new Device();
-        d1.setName("win-1-x84_64");
-        d1.setCompSpeed(1.0);
-        d1.setTimeLimit(timeLimit);
-        d1.getPlatforms().add(p1);
-        d1.getArchitectures().addAll(List.of(a1, a2));
+        Test t3 = new Test();
+        t3.setName("RunHelloWorldSample");
+        t3.setAvgRunTime(60);
+        t3.getPlatforms().addAll(List.of(windows, linux));
+
+        Device win1 = new Device();
+        win1.setName("win-1-x86_64");
+        win1.setCompSpeed(1.0);
+        win1.setTimeLimit(timeLimit);
+        win1.getPlatforms().add(windows);
+        win1.getArchitectures().addAll(List.of(a1, a2));
+
+        Device linux1 = new Device();
+        linux1.setName("linux-1-x86_64");
+        linux1.setCompSpeed(1.2);
+        linux1.setTimeLimit(timeLimit);
+        linux1.getPlatforms().add(linux);
+        linux1.getArchitectures().addAll(List.of(a1, a2));
 
         problem.getArchitectures().addAll(List.of(a1, a2));
-        problem.getPlatforms().add(p1);
-        problem.getDevices().add(d1);
-        problem.getTests().addAll(List.of(t1, t2));
+        problem.getPlatforms().addAll(List.of(windows, linux));
+        problem.getDevices().addAll(List.of(win1, linux1));
+        problem.getTests().addAll(List.of(t1, t2, t3));
 
         problem.preprocess();
 

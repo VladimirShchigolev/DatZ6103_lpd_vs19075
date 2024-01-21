@@ -7,4 +7,9 @@ import lombok.Setter;
 @Getter @Setter @NoArgsConstructor
 public class Architecture {
     private String name;
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

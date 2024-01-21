@@ -24,18 +24,6 @@ public class Device {
     @InverseRelationShadowVariable(sourceVariableName = "device")
     private List<TestRun> testRuns = new ArrayList<>();
 
-    public Integer getTotalTime() {
-        int time = 0;
-
-        for (TestRun testRun : testRuns) {
-            Test test = testRun.getTest();
-            if (test != null)
-                time += (int) round(test.getAvgRunTime() / compSpeed);
-        }
-
-        return time;
-    }
-
     @Override
     public String toString() {
         return name;

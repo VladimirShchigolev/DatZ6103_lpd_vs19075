@@ -6,10 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @PlanningEntity
 @Getter @Setter @NoArgsConstructor
@@ -23,12 +20,8 @@ public class Test {
     @InverseRelationShadowVariable(sourceVariableName = "test")
     private List<TestRun> testRuns = new ArrayList<>();
 
-    public Integer getArchitectureCover() {
-        Set<Architecture> architectureSet = new HashSet<>();
-        for (TestRun testRun : testRuns) {
-            if (testRun.getArchitecture() != null)
-                architectureSet.add(testRun.getArchitecture());
-        }
-        return architectureSet.size() * 100 / architectureCount;
+    @Override
+    public String toString() {
+        return name;
     }
 }
