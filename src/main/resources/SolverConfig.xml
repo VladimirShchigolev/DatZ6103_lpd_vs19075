@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver xmlns="https://timefold.ai/xsd/solver" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://timefold.ai/xsd/solver https://timefold.ai/xsd/solver/solver.xsd">
+    <environmentMode>REPRODUCIBLE</environmentMode>
+    <!-- Define the model -->
+    <solutionClass>lv.lu.df.combopt.domain.TestingSchedule</solutionClass>
+    <entityClass>lv.lu.df.combopt.domain.TestRun</entityClass>
+    <entityClass>lv.lu.df.combopt.domain.Device</entityClass>
+    <entityClass>lv.lu.df.combopt.domain.Test</entityClass>
+
+    <!-- Define the score function -->
+    <scoreDirectorFactory>
+        <constraintProviderClass>lv.lu.df.combopt.solver.StreamCalculator</constraintProviderClass>
+    </scoreDirectorFactory>
+
+    <!-- Configure the optimization algorithms (optional) -->
+    <termination>
+        <secondsSpentLimit>5</secondsSpentLimit>
+    </termination>
+
+    <constructionHeuristic />
+
+    <localSearch>
+        <unionMoveSelector>
+            <changeMoveSelector />
+            <swapMoveSelector>
+                <entitySelector>
+                    <entityClass>TestRun</entityClass>
+                </entitySelector>
+                <variableNameIncludes>
+                    <variableNameInclude>device</variableNameInclude>
+                </variableNameIncludes>
+
+            </swapMoveSelector>
+        </unionMoveSelector>
+    </localSearch>
+</solver>

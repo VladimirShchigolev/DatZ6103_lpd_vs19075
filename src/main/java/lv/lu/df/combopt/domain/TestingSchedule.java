@@ -12,10 +12,7 @@ import lombok.Setter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static java.lang.Math.max;
 
@@ -49,8 +46,9 @@ public class TestingSchedule {
     private List<Architecture> architectures = new ArrayList<>();
 
     public void print() {
-        this.getTestRuns().forEach(testRun -> {
-            LOGGER.info(testRun.toString());
+        LOGGER.info("Time Limit: " + timeLimit);
+        this.getDevices().forEach(device -> {
+            LOGGER.info(device.toStringDetailed());
         });
     }
 
@@ -138,6 +136,93 @@ public class TestingSchedule {
         problem.getDevices().addAll(List.of(win1, linux1));
         problem.getTests().addAll(List.of(t1, t2, t3));
 
+        problem.preprocess();
+
+        return problem;
+    }
+
+    public static TestingSchedule generateData(int scale) {
+        int timeLimit = scale * 300;
+        int deviceCount = max(scale / 2, 5);
+        int testCount = scale;
+
+        Random random = new Random();
+
+        TestingSchedule problem = new TestingSchedule();
+
+        String[] platformNames = {"windows", "linux", "osx", "ios", "android"};
+        for (String platformName : platformNames) {
+            Platform p = new Platform();
+            p.setName(platformName);
+            problem.getPlatforms().add(p);
+        }
+
+        String [] archNames = {"x86_64", "x86", "arm", "thumb", "arm64", "arm64ec", "mips"};
+        for (String archName : archNames) {
+            Architecture a = new Architecture();
+            a.setName(archName);
+            problem.getArchitectures().add(a);
+        }
+
+
+        for (Integer testNo = 1; testNo <= testCount; testNo++) {
+            Test t = new Test();
+            t.setName("Test#" + testNo.toString());
+            t.setAvgRunTime(200 + random.nextInt(400) - 100);
+            for (Platform p : problem.getPlatforms()) {
+                if (random.nextInt(3) == 0) {
+                    t.getPlatforms().add(p);
+                }
+            }
+            if (t.getPlatforms().size() == 0) {
+                int idx = random.nextInt(problem.getPlatforms().size());
+                t.getPlatforms().add(problem.getPlatforms().get(idx));
+            }
+
+            problem.getTests().add(t);
+        }
+
+        for (Integer deviceNo = 1; deviceNo <= deviceCount; deviceNo++) {
+            Device d = new Device();
+            Platform p;
+            if (deviceNo <= 5) {
+                p = problem.getPlatforms().get(deviceNo-1);
+            }
+            else {
+                p = problem.getPlatforms().get(random.nextInt(problem.getPlatforms().size()));
+            }
+            d.getPlatforms().add(p);
+            if ((p.getName().equals("windows") || p.getName().equals("linux")) && random.nextInt(2)==1) {
+                d.getPlatforms().add(problem.getPlatforms().get(4));
+            }
+            else if (p.getName().equals("osx") && random.nextInt(2)==1) {
+                d.getPlatforms().add(problem.getPlatforms().get(3));
+            }
+
+            Architecture a = problem.getArchitectures().get(random.nextInt(problem.getArchitectures().size()));
+            d.getArchitectures().add(a);
+            if (a.getName().equals("x86_64")) {
+                d.getArchitectures().add(problem.getArchitectures().get(1));
+            }
+            else if (a.getName().equals("arm64")) {
+                if (random.nextInt(2)==1) {
+                    d.getArchitectures().add(problem.getArchitectures().get(2));
+                }
+                if (random.nextInt(2)==1) {
+                    d.getArchitectures().add(problem.getArchitectures().get(5));
+                }
+            }
+            else if (a.getName().equals("thumb") && random.nextInt(2)==1) {
+                d.getArchitectures().add(problem.getArchitectures().get(2));
+            }
+
+            d.setName(p.getName() + "-" + deviceNo + "-" + a.getName());
+            d.setTimeLimit(timeLimit);
+            d.setCompSpeed(0.5 + random.nextDouble());
+
+            problem.getDevices().add(d);
+        }
+        problem.setTimeLimit(timeLimit);
         problem.preprocess();
 
         return problem;

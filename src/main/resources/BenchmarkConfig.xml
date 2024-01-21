@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plannerBenchmark xmlns="https://timefold.ai/xsd/benchmark" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="https://timefold.ai/xsd/benchmark https://timefold.ai/xsd/benchmark/benchmark.xsd">
+    <benchmarkDirectory>local/benchmarkReport</benchmarkDirectory>
+
+    <inheritedSolverBenchmark>
+        <solver>
+            <environmentMode>REPRODUCIBLE</environmentMode>
+            <!-- Define the model -->
+            <solutionClass>lv.lu.df.combopt.domain.TestingSchedule</solutionClass>
+            <entityClass>lv.lu.df.combopt.domain.TestRun</entityClass>
+            <entityClass>lv.lu.df.combopt.domain.Test</entityClass>
+            <entityClass>lv.lu.df.combopt.domain.Device</entityClass>
+
+            <!-- Define the score function -->
+            <scoreDirectorFactory>
+                <constraintProviderClass>lv.lu.df.combopt.solver.StreamCalculator</constraintProviderClass>
+            </scoreDirectorFactory>
+
+            <!-- Configure the optimization algorithms (optional) -->
+            <termination>
+                <secondsSpentLimit>20</secondsSpentLimit>
+            </termination>
+
+            <constructionHeuristic />
+        </solver>
+        <problemBenchmarks>
+            <solutionFileIOClass>lv.lu.df.combopt.domain.TestingScheduleJsonIO</solutionFileIOClass>
+            <writeOutputSolutionEnabled>true</writeOutputSolutionEnabled>
+            <inputSolutionFile>data/classExample5.json</inputSolutionFile>
+            <inputSolutionFile>data/classExample10.json</inputSolutionFile>
+            <inputSolutionFile>data/classExample15.json</inputSolutionFile>
+            <inputSolutionFile>data/classExample25.json</inputSolutionFile>
+            <inputSolutionFile>data/classExample35.json</inputSolutionFile>
+        </problemBenchmarks>
+        <!--<subSingleCount>5</subSingleCount>-->
+    </inheritedSolverBenchmark>
+
+    <solverBenchmark>
+        <name>Tabu 5 500</name>
+        <solver>
+            <localSearch>
+                <unionMoveSelector>
+                    <changeMoveSelector />
+                    <swapMoveSelector>
+                        <entitySelector>
+                            <entityClass>TestRun</entityClass>
+                        </entitySelector>
+                        <variableNameIncludes>
+                            <variableNameInclude>device</variableNameInclude>
+                        </variableNameIncludes>
+
+                    </swapMoveSelector>
+                </unionMoveSelector>
+                <acceptor>
+                    <entityTabuSize>5</entityTabuSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>500</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    <solverBenchmark>
+        <name>Tabu 10 1000</name>
+        <solver>
+            <localSearch>
+                <unionMoveSelector>
+                    <changeMoveSelector />
+                    <swapMoveSelector>
+                        <entitySelector>
+                            <entityClass>TestRun</entityClass>
+                        </entitySelector>
+                        <variableNameIncludes>
+                            <variableNameInclude>device</variableNameInclude>
+                        </variableNameIncludes>
+
+                    </swapMoveSelector>
+                </unionMoveSelector>
+                <acceptor>
+                    <entityTabuSize>10</entityTabuSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1000</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    <solverBenchmark>
+        <name>LAHC 400 swap device</name>
+        <solver>
+            <localSearch>
+                <unionMoveSelector>
+                    <changeMoveSelector />
+                    <swapMoveSelector>
+                        <entitySelector>
+                            <entityClass>TestRun</entityClass>
+                        </entitySelector>
+                        <variableNameIncludes>
+                            <variableNameInclude>device</variableNameInclude>
+                        </variableNameIncludes>
+                    </swapMoveSelector>
+                </unionMoveSelector>
+                <acceptor>
+                    <lateAcceptanceSize>400</lateAcceptanceSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    <solverBenchmark>
+        <name>LAHC 400 swap test</name>
+        <solver>
+            <localSearch>
+                <unionMoveSelector>
+                    <changeMoveSelector />
+                    <swapMoveSelector>
+                        <entitySelector>
+                            <entityClass>TestRun</entityClass>
+                        </entitySelector>
+                        <variableNameIncludes>
+                            <variableNameInclude>test</variableNameInclude>
+                        </variableNameIncludes>
+                    </swapMoveSelector>
+                </unionMoveSelector>
+                <acceptor>
+                    <lateAcceptanceSize>400</lateAcceptanceSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    <solverBenchmark>
+        <name>LAHC 400 swap test and device</name>
+        <solver>
+            <localSearch>
+                <unionMoveSelector>
+                    <changeMoveSelector />
+                    <swapMoveSelector>
+                        <entitySelector>
+                            <entityClass>TestRun</entityClass>
+                        </entitySelector>
+                        <variableNameIncludes>
+                            <variableNameInclude>device</variableNameInclude>
+                        </variableNameIncludes>
+                    </swapMoveSelector>
+                    <swapMoveSelector>
+                        <entitySelector>
+                            <entityClass>TestRun</entityClass>
+                        </entitySelector>
+                        <variableNameIncludes>
+                            <variableNameInclude>test</variableNameInclude>
+                        </variableNameIncludes>
+                    </swapMoveSelector>
+                </unionMoveSelector>
+                <acceptor>
+                    <lateAcceptanceSize>400</lateAcceptanceSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+</plannerBenchmark>

@@ -38,7 +38,7 @@ public class StreamCalculator implements ConstraintProvider {
                 .forEach(TestRun.class)
                 .filter(testRun -> testRun.getTest() != null)
                 .filter(testRun -> !testRun.getTest().getPlatforms().contains(testRun.getPlatform()))
-                .penalize(HardMediumSoftScore.ONE_HARD)
+                .penalize(HardMediumSoftScore.ONE_HARD, testRun -> 12)
                 .asConstraint("Wrong Test Platform (Test does not support it)");
     }
 
@@ -46,7 +46,7 @@ public class StreamCalculator implements ConstraintProvider {
         return constraintFactory
                 .forEach(TestRun.class)
                 .filter(testRun -> !testRun.getDevice().getPlatforms().contains(testRun.getPlatform()))
-                .penalize(HardMediumSoftScore.ONE_HARD)
+                .penalize(HardMediumSoftScore.ONE_HARD, testRun -> 10)
                 .asConstraint("Wrong Test Platform (Device does not support it)");
     }
 
@@ -54,7 +54,7 @@ public class StreamCalculator implements ConstraintProvider {
         return constraintFactory
                 .forEach(TestRun.class)
                 .filter(testRun -> !testRun.getDevice().getArchitectures().contains(testRun.getArchitecture()))
-                .penalize(HardMediumSoftScore.ONE_HARD)
+                .penalize(HardMediumSoftScore.ONE_HARD, testRun -> 5)
                 .asConstraint("Wrong Test Architecture (Device does not support it)");
     }
 
@@ -62,7 +62,7 @@ public class StreamCalculator implements ConstraintProvider {
         return constraintFactory
                 .forEach(Test.class)
                 .filter(test -> test.getTestRuns().size() == 0)
-                .penalize(HardMediumSoftScore.ONE_HARD, test -> test.getPlatforms().size())
+                .penalize(HardMediumSoftScore.ONE_HARD, test -> test.getPlatforms().size()*4)
                 .asConstraint("Unchecked Test (Unchecked all Platforms)");
     }
 
@@ -73,16 +73,16 @@ public class StreamCalculator implements ConstraintProvider {
                 .filter(testRun -> testRun.getTest().getPlatforms().contains(testRun.getPlatform()))
                 .groupBy(TestRun::getTest, countDistinct(TestRun::getPlatform))
                 .penalize(HardMediumSoftScore.ONE_HARD,
-                        (test, checkedPlatforms) -> test.getPlatforms().size() - checkedPlatforms)
+                        (test, checkedPlatforms) -> (test.getPlatforms().size() - checkedPlatforms)*4)
                 .asConstraint("Unchecked Platforms");
     }
-
 
     public Constraint minArchitectureCover(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(TestRun.class)
                 .groupBy(TestRun::getTest, countDistinct(TestRun::getArchitecture))
-                .map((test, archCount) -> archCount * 100 / test.getArchitectureCount())
+                .map((test, archCount) ->
+                        (test.getArchitectureCount() != 0) ? archCount * 100 / test.getArchitectureCount() : 0)
                 .groupBy(a -> "Minimal Architecture Cover", min())
                 .reward(HardMediumSoftScore.ONE_MEDIUM, (s, a) -> a)
                 .asConstraint("Minimal Architecture Cover");
@@ -92,7 +92,8 @@ public class StreamCalculator implements ConstraintProvider {
         return constraintFactory
                 .forEach(TestRun.class)
                 .groupBy(TestRun::getTest, countDistinct(TestRun::getArchitecture))
-                .map((test, count) -> test, (test, count) -> count * 100 / test.getArchitectureCount())
+                .map((test, count) -> test, (test, count) ->
+                        (test.getArchitectureCount() != 0) ? count * 100 / test.getArchitectureCount() : 0)
                 .reward(HardMediumSoftScore.ONE_SOFT, (test, archCover) -> archCover)
                 .asConstraint("Test Architecture Cover");
     }
