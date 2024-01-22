@@ -5,12 +5,15 @@ import ai.timefold.solver.core.api.score.buildin.hardmediumsoft.HardMediumSoftSc
 import ai.timefold.solver.core.api.score.constraint.Indictment;
 import ai.timefold.solver.core.api.solver.SolutionManager;
 import ai.timefold.solver.core.api.solver.SolverManager;
+import jakarta.annotation.PostConstruct;
 import lv.lu.df.combopt.domain.Test;
 import lv.lu.df.combopt.domain.TestingSchedule;
+import lv.lu.df.combopt.domain.TestingScheduleJsonIO;
 import lv.lu.df.combopt.solver.SimpleIndictmentObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -64,5 +67,18 @@ public class TestingScheduleController {
                                     indictment.getConstraintMatchCount(),
                                     indictment.getConstraintMatchSet());
                 }).collect(Collectors.toList());
+    }
+
+    @SuppressWarnings("removal")
+    @PostConstruct
+    public void init() {
+        TestingScheduleJsonIO testingScheduleJsonIO = new TestingScheduleJsonIO();
+        TestingSchedule problem25 = testingScheduleJsonIO.read(new File("data/classExample25.json"));
+        problem25.setSolutionId("1");
+        solverManager.solveAndListen(
+                problem25.getSolutionId(), id -> problem25, solution -> {
+                    solutionMap.put(solution.getSolutionId(), solution);
+                }
+        );
     }
 }
