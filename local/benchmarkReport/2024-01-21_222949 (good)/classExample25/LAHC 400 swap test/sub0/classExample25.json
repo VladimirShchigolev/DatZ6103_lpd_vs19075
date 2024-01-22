@@ -1,0 +1,982 @@
+{
+  "solutionId" : null,
+  "timeLimit" : 7500,
+  "score" : "0hard/80medium/2340soft",
+  "testRuns" : [ {
+    "id" : "run#1",
+    "runTime" : 593,
+    "test" : {
+      "name" : "Test#7",
+      "avgRunTime" : 373,
+      "architectureCount" : 7,
+      "platforms" : [ {
+        "name" : "osx"
+      }, {
+        "name" : "android"
+      } ],
+      "testRuns" : [ {
+        "id" : "run#89",
+        "runTime" : 593,
+        "test" : "Test#7",
+        "device" : {
+          "name" : "android-12-x86",
+          "compSpeed" : 0.6285928462198465,
+          "timeLimit" : 7500,
+          "platforms" : [ "android" ],
+          "architectures" : [ {
+            "name" : "x86"
+          } ],
+          "testRuns" : [ "run#89", "run#1", {
+            "id" : "run#76",
+            "runTime" : 0,
+            "test" : null,
+            "device" : "android-12-x86",
+            "platform" : {
+              "name" : "windows"
+            },
+            "architecture" : {
+              "name" : "arm64"
+            }
+          }, {
+            "id" : "run#25",
+            "runTime" : 687,
+            "test" : {
+              "name" : "Test#19",
+              "avgRunTime" : 432,
+              "architectureCount" : 5,
+              "platforms" : [ "windows", "android", {
+                "name" : "ios"
+              } ],
+              "testRuns" : [ "run#25", {
+                "id" : "run#35",
+                "runTime" : 677,
+                "test" : "Test#19",
+                "device" : {
+                  "name" : "windows-11-arm64",
+                  "compSpeed" : 0.6379317388827738,
+                  "timeLimit" : 7500,
+                  "platforms" : [ "windows", "android" ],
+                  "architectures" : [ "arm64" ],
+                  "testRuns" : [ {
+                    "id" : "run#38",
+                    "runTime" : 309,
+                    "test" : {
+                      "name" : "Test#5",
+                      "avgRunTime" : 197,
+                      "architectureCount" : 7,
+                      "platforms" : [ "osx", "windows", {
+                        "name" : "linux"
+                      } ],
+                      "testRuns" : [ {
+                        "id" : "run#43",
+                        "runTime" : 151,
+                        "test" : "Test#5",
+                        "device" : {
+                          "name" : "linux-8-x86_64",
+                          "compSpeed" : 1.3028546354250263,
+                          "timeLimit" : 7500,
+                          "platforms" : [ "linux" ],
+                          "architectures" : [ {
+                            "name" : "x86_64"
+                          }, "x86" ],
+                          "testRuns" : [ {
+                            "id" : "run#28",
+                            "runTime" : 233,
+                            "test" : {
+                              "name" : "Test#12",
+                              "avgRunTime" : 304,
+                              "architectureCount" : 5,
+                              "platforms" : [ "linux", "ios" ],
+                              "testRuns" : [ {
+                                "id" : "run#16",
+                                "runTime" : 247,
+                                "test" : "Test#12",
+                                "device" : {
+                                  "name" : "linux-9-thumb",
+                                  "compSpeed" : 1.2302034981228074,
+                                  "timeLimit" : 7500,
+                                  "platforms" : [ "linux" ],
+                                  "architectures" : [ {
+                                    "name" : "thumb"
+                                  }, {
+                                    "name" : "arm"
+                                  } ],
+                                  "testRuns" : [ {
+                                    "id" : "run#66",
+                                    "runTime" : 397,
+                                    "test" : {
+                                      "name" : "Test#6",
+                                      "avgRunTime" : 488,
+                                      "architectureCount" : 7,
+                                      "platforms" : [ "osx", "linux", "android" ],
+                                      "testRuns" : [ "run#66", {
+                                        "id" : "run#78",
+                                        "runTime" : 375,
+                                        "test" : "Test#6",
+                                        "device" : "linux-8-x86_64",
+                                        "platform" : "linux",
+                                        "architecture" : "x86"
+                                      }, {
+                                        "id" : "run#98",
+                                        "runTime" : 375,
+                                        "test" : "Test#6",
+                                        "device" : "linux-8-x86_64",
+                                        "platform" : "linux",
+                                        "architecture" : "x86_64"
+                                      }, {
+                                        "id" : "run#75",
+                                        "runTime" : 581,
+                                        "test" : "Test#6",
+                                        "device" : {
+                                          "name" : "osx-7-thumb",
+                                          "compSpeed" : 0.8395807131178397,
+                                          "timeLimit" : 7500,
+                                          "platforms" : [ "osx" ],
+                                          "architectures" : [ "thumb" ],
+                                          "testRuns" : [ {
+                                            "id" : "run#84",
+                                            "runTime" : 154,
+                                            "test" : {
+                                              "name" : "Test#22",
+                                              "avgRunTime" : 129,
+                                              "architectureCount" : 7,
+                                              "platforms" : [ "osx", "linux", "android", "ios" ],
+                                              "testRuns" : [ {
+                                                "id" : "run#90",
+                                                "runTime" : 119,
+                                                "test" : "Test#22",
+                                                "device" : {
+                                                  "name" : "osx-3-mips",
+                                                  "compSpeed" : 1.0878365381204436,
+                                                  "timeLimit" : 7500,
+                                                  "platforms" : [ "osx" ],
+                                                  "architectures" : [ {
+                                                    "name" : "mips"
+                                                  } ],
+                                                  "testRuns" : [ {
+                                                    "id" : "run#70",
+                                                    "runTime" : 181,
+                                                    "test" : "Test#5",
+                                                    "device" : "osx-3-mips",
+                                                    "platform" : "osx",
+                                                    "architecture" : "mips"
+                                                  }, "run#90", {
+                                                    "id" : "run#102",
+                                                    "runTime" : 324,
+                                                    "test" : {
+                                                      "name" : "Test#20",
+                                                      "avgRunTime" : 352,
+                                                      "architectureCount" : 3,
+                                                      "platforms" : [ "osx", "ios" ],
+                                                      "testRuns" : [ {
+                                                        "id" : "run#71",
+                                                        "runTime" : 419,
+                                                        "test" : "Test#20",
+                                                        "device" : "osx-7-thumb",
+                                                        "platform" : "osx",
+                                                        "architecture" : "thumb"
+                                                      }, "run#102", {
+                                                        "id" : "run#79",
+                                                        "runTime" : 474,
+                                                        "test" : "Test#20",
+                                                        "device" : {
+                                                          "name" : "ios-4-arm",
+                                                          "compSpeed" : 0.7419528755612252,
+                                                          "timeLimit" : 7500,
+                                                          "platforms" : [ "ios" ],
+                                                          "architectures" : [ "arm" ],
+                                                          "testRuns" : [ {
+                                                            "id" : "run#4",
+                                                            "runTime" : 349,
+                                                            "test" : {
+                                                              "name" : "Test#1",
+                                                              "avgRunTime" : 259,
+                                                              "architectureCount" : 4,
+                                                              "platforms" : [ "windows", "ios" ],
+                                                              "testRuns" : [ {
+                                                                "id" : "run#56",
+                                                                "runTime" : 406,
+                                                                "test" : "Test#1",
+                                                                "device" : "windows-11-arm64",
+                                                                "platform" : "windows",
+                                                                "architecture" : "arm64"
+                                                              }, {
+                                                                "id" : "run#32",
+                                                                "runTime" : 334,
+                                                                "test" : "Test#1",
+                                                                "device" : {
+                                                                  "name" : "windows-6-x86",
+                                                                  "compSpeed" : 0.7761031264205067,
+                                                                  "timeLimit" : 7500,
+                                                                  "platforms" : [ "windows", "android" ],
+                                                                  "architectures" : [ "x86" ],
+                                                                  "testRuns" : [ "run#32", {
+                                                                    "id" : "run#83",
+                                                                    "runTime" : 195,
+                                                                    "test" : {
+                                                                      "name" : "Test#3",
+                                                                      "avgRunTime" : 151,
+                                                                      "architectureCount" : 5,
+                                                                      "platforms" : [ "android" ],
+                                                                      "testRuns" : [ {
+                                                                        "id" : "run#36",
+                                                                        "runTime" : 118,
+                                                                        "test" : "Test#3",
+                                                                        "device" : {
+                                                                          "name" : "linux-2-arm64ec",
+                                                                          "compSpeed" : 1.2746825082750446,
+                                                                          "timeLimit" : 7500,
+                                                                          "platforms" : [ "linux", "android" ],
+                                                                          "architectures" : [ {
+                                                                            "name" : "arm64ec"
+                                                                          } ],
+                                                                          "testRuns" : [ {
+                                                                            "id" : "run#11",
+                                                                            "runTime" : 101,
+                                                                            "test" : "Test#22",
+                                                                            "device" : "linux-2-arm64ec",
+                                                                            "platform" : "linux",
+                                                                            "architecture" : "arm64ec"
+                                                                          }, {
+                                                                            "id" : "run#13",
+                                                                            "runTime" : 140,
+                                                                            "test" : {
+                                                                              "name" : "Test#15",
+                                                                              "avgRunTime" : 179,
+                                                                              "architectureCount" : 5,
+                                                                              "platforms" : [ "windows", "android" ],
+                                                                              "testRuns" : [ "run#13", {
+                                                                                "id" : "run#48",
+                                                                                "runTime" : 231,
+                                                                                "test" : "Test#15",
+                                                                                "device" : "windows-6-x86",
+                                                                                "platform" : "windows",
+                                                                                "architecture" : "x86"
+                                                                              }, {
+                                                                                "id" : "run#82",
+                                                                                "runTime" : 281,
+                                                                                "test" : "Test#15",
+                                                                                "device" : "windows-11-arm64",
+                                                                                "platform" : "windows",
+                                                                                "architecture" : "arm64"
+                                                                              }, {
+                                                                                "id" : "run#49",
+                                                                                "runTime" : 347,
+                                                                                "test" : "Test#15",
+                                                                                "device" : {
+                                                                                  "name" : "android-5-arm",
+                                                                                  "compSpeed" : 0.5162555478559436,
+                                                                                  "timeLimit" : 7500,
+                                                                                  "platforms" : [ "android" ],
+                                                                                  "architectures" : [ "arm" ],
+                                                                                  "testRuns" : [ {
+                                                                                    "id" : "run#94",
+                                                                                    "runTime" : 761,
+                                                                                    "test" : {
+                                                                                      "name" : "Test#9",
+                                                                                      "avgRunTime" : 393,
+                                                                                      "architectureCount" : 5,
+                                                                                      "platforms" : [ "windows", "android" ],
+                                                                                      "testRuns" : [ {
+                                                                                        "id" : "run#100",
+                                                                                        "runTime" : 616,
+                                                                                        "test" : "Test#9",
+                                                                                        "device" : "windows-11-arm64",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "arm64"
+                                                                                      }, "run#94", {
+                                                                                        "id" : "run#42",
+                                                                                        "runTime" : 344,
+                                                                                        "test" : "Test#9",
+                                                                                        "device" : {
+                                                                                          "name" : "android-10-x86_64",
+                                                                                          "compSpeed" : 1.1433095189648674,
+                                                                                          "timeLimit" : 7500,
+                                                                                          "platforms" : [ "android" ],
+                                                                                          "architectures" : [ "x86_64", "x86" ],
+                                                                                          "testRuns" : [ "run#42", {
+                                                                                            "id" : "run#21",
+                                                                                            "runTime" : 326,
+                                                                                            "test" : "Test#7",
+                                                                                            "device" : "android-10-x86_64",
+                                                                                            "platform" : "android",
+                                                                                            "architecture" : "x86_64"
+                                                                                          }, {
+                                                                                            "id" : "run#72",
+                                                                                            "runTime" : 113,
+                                                                                            "test" : "Test#22",
+                                                                                            "device" : "android-10-x86_64",
+                                                                                            "platform" : "android",
+                                                                                            "architecture" : "x86_64"
+                                                                                          } ]
+                                                                                        },
+                                                                                        "platform" : "android",
+                                                                                        "architecture" : "x86_64"
+                                                                                      }, {
+                                                                                        "id" : "run#47",
+                                                                                        "runTime" : 308,
+                                                                                        "test" : "Test#9",
+                                                                                        "device" : "linux-2-arm64ec",
+                                                                                        "platform" : "android",
+                                                                                        "architecture" : "arm64ec"
+                                                                                      } ]
+                                                                                    },
+                                                                                    "device" : "android-5-arm",
+                                                                                    "platform" : "android",
+                                                                                    "architecture" : "arm"
+                                                                                  }, "run#49", {
+                                                                                    "id" : "run#26",
+                                                                                    "runTime" : 292,
+                                                                                    "test" : "Test#3",
+                                                                                    "device" : "android-5-arm",
+                                                                                    "platform" : "android",
+                                                                                    "architecture" : "arm"
+                                                                                  }, {
+                                                                                    "id" : "run#57",
+                                                                                    "runTime" : 723,
+                                                                                    "test" : "Test#7",
+                                                                                    "device" : "android-5-arm",
+                                                                                    "platform" : "android",
+                                                                                    "architecture" : "arm"
+                                                                                  }, {
+                                                                                    "id" : "run#46",
+                                                                                    "runTime" : 0,
+                                                                                    "test" : null,
+                                                                                    "device" : "android-5-arm",
+                                                                                    "platform" : "ios",
+                                                                                    "architecture" : "arm"
+                                                                                  } ]
+                                                                                },
+                                                                                "platform" : "android",
+                                                                                "architecture" : "arm"
+                                                                              }, {
+                                                                                "id" : "run#91",
+                                                                                "runTime" : 310,
+                                                                                "test" : "Test#15",
+                                                                                "device" : {
+                                                                                  "name" : "windows-1-x86_64",
+                                                                                  "compSpeed" : 0.5774340230323003,
+                                                                                  "timeLimit" : 7500,
+                                                                                  "platforms" : [ "windows", "android" ],
+                                                                                  "architectures" : [ "x86_64", "x86" ],
+                                                                                  "testRuns" : [ {
+                                                                                    "id" : "run#51",
+                                                                                    "runTime" : 760,
+                                                                                    "test" : {
+                                                                                      "name" : "Test#23",
+                                                                                      "avgRunTime" : 439,
+                                                                                      "architectureCount" : 4,
+                                                                                      "platforms" : [ "windows", "ios" ],
+                                                                                      "testRuns" : [ {
+                                                                                        "id" : "run#37",
+                                                                                        "runTime" : 760,
+                                                                                        "test" : "Test#23",
+                                                                                        "device" : "windows-1-x86_64",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "x86_64"
+                                                                                      }, {
+                                                                                        "id" : "run#85",
+                                                                                        "runTime" : 592,
+                                                                                        "test" : "Test#23",
+                                                                                        "device" : "ios-4-arm",
+                                                                                        "platform" : "ios",
+                                                                                        "architecture" : "arm"
+                                                                                      }, "run#51", {
+                                                                                        "id" : "run#8",
+                                                                                        "runTime" : 688,
+                                                                                        "test" : "Test#23",
+                                                                                        "device" : "windows-11-arm64",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "arm64"
+                                                                                      } ]
+                                                                                    },
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "windows",
+                                                                                    "architecture" : "x86"
+                                                                                  }, {
+                                                                                    "id" : "run#61",
+                                                                                    "runTime" : 449,
+                                                                                    "test" : "Test#1",
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "windows",
+                                                                                    "architecture" : "x86_64"
+                                                                                  }, {
+                                                                                    "id" : "run#87",
+                                                                                    "runTime" : 223,
+                                                                                    "test" : "Test#22",
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "android",
+                                                                                    "architecture" : "x86"
+                                                                                  }, {
+                                                                                    "id" : "run#64",
+                                                                                    "runTime" : 270,
+                                                                                    "test" : {
+                                                                                      "name" : "Test#13",
+                                                                                      "avgRunTime" : 156,
+                                                                                      "architectureCount" : 7,
+                                                                                      "platforms" : [ "osx", "windows", "linux", "android", "ios" ],
+                                                                                      "testRuns" : [ "run#64", {
+                                                                                        "id" : "run#53",
+                                                                                        "runTime" : 143,
+                                                                                        "test" : "Test#13",
+                                                                                        "device" : "osx-3-mips",
+                                                                                        "platform" : "osx",
+                                                                                        "architecture" : "mips"
+                                                                                      }, {
+                                                                                        "id" : "run#62",
+                                                                                        "runTime" : 210,
+                                                                                        "test" : "Test#13",
+                                                                                        "device" : "ios-4-arm",
+                                                                                        "platform" : "ios",
+                                                                                        "architecture" : "arm"
+                                                                                      }, {
+                                                                                        "id" : "run#54",
+                                                                                        "runTime" : 127,
+                                                                                        "test" : "Test#13",
+                                                                                        "device" : "linux-9-thumb",
+                                                                                        "platform" : "linux",
+                                                                                        "architecture" : "thumb"
+                                                                                      }, {
+                                                                                        "id" : "run#12",
+                                                                                        "runTime" : 245,
+                                                                                        "test" : "Test#13",
+                                                                                        "device" : "windows-11-arm64",
+                                                                                        "platform" : "android",
+                                                                                        "architecture" : "arm64"
+                                                                                      }, {
+                                                                                        "id" : "run#69",
+                                                                                        "runTime" : 122,
+                                                                                        "test" : "Test#13",
+                                                                                        "device" : "linux-2-arm64ec",
+                                                                                        "platform" : "linux",
+                                                                                        "architecture" : "arm64ec"
+                                                                                      }, {
+                                                                                        "id" : "run#33",
+                                                                                        "runTime" : 201,
+                                                                                        "test" : "Test#13",
+                                                                                        "device" : "windows-6-x86",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "x86"
+                                                                                      } ]
+                                                                                    },
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "windows",
+                                                                                    "architecture" : "x86_64"
+                                                                                  }, {
+                                                                                    "id" : "run#22",
+                                                                                    "runTime" : 835,
+                                                                                    "test" : {
+                                                                                      "name" : "Test#16",
+                                                                                      "avgRunTime" : 482,
+                                                                                      "architectureCount" : 7,
+                                                                                      "platforms" : [ "osx", "windows", "linux" ],
+                                                                                      "testRuns" : [ {
+                                                                                        "id" : "run#6",
+                                                                                        "runTime" : 378,
+                                                                                        "test" : "Test#16",
+                                                                                        "device" : "linux-2-arm64ec",
+                                                                                        "platform" : "linux",
+                                                                                        "architecture" : "arm64ec"
+                                                                                      }, {
+                                                                                        "id" : "run#99",
+                                                                                        "runTime" : 443,
+                                                                                        "test" : "Test#16",
+                                                                                        "device" : "osx-3-mips",
+                                                                                        "platform" : "osx",
+                                                                                        "architecture" : "mips"
+                                                                                      }, {
+                                                                                        "id" : "run#77",
+                                                                                        "runTime" : 756,
+                                                                                        "test" : "Test#16",
+                                                                                        "device" : "windows-11-arm64",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "arm64"
+                                                                                      }, {
+                                                                                        "id" : "run#58",
+                                                                                        "runTime" : 621,
+                                                                                        "test" : "Test#16",
+                                                                                        "device" : "windows-6-x86",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "x86"
+                                                                                      }, {
+                                                                                        "id" : "run#59",
+                                                                                        "runTime" : 574,
+                                                                                        "test" : "Test#16",
+                                                                                        "device" : "osx-7-thumb",
+                                                                                        "platform" : "osx",
+                                                                                        "architecture" : "thumb"
+                                                                                      }, "run#22" ]
+                                                                                    },
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "windows",
+                                                                                    "architecture" : "x86_64"
+                                                                                  }, {
+                                                                                    "id" : "run#40",
+                                                                                    "runTime" : 672,
+                                                                                    "test" : {
+                                                                                      "name" : "Test#11",
+                                                                                      "avgRunTime" : 388,
+                                                                                      "architectureCount" : 3,
+                                                                                      "platforms" : [ "windows" ],
+                                                                                      "testRuns" : [ {
+                                                                                        "id" : "run#2",
+                                                                                        "runTime" : 608,
+                                                                                        "test" : "Test#11",
+                                                                                        "device" : "windows-11-arm64",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "arm64"
+                                                                                      }, {
+                                                                                        "id" : "run#19",
+                                                                                        "runTime" : 500,
+                                                                                        "test" : "Test#11",
+                                                                                        "device" : "windows-6-x86",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "x86"
+                                                                                      }, "run#40" ]
+                                                                                    },
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "windows",
+                                                                                    "architecture" : "x86_64"
+                                                                                  }, {
+                                                                                    "id" : "run#88",
+                                                                                    "runTime" : 748,
+                                                                                    "test" : "Test#19",
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "android",
+                                                                                    "architecture" : "x86_64"
+                                                                                  }, "run#37", {
+                                                                                    "id" : "run#96",
+                                                                                    "runTime" : 262,
+                                                                                    "test" : "Test#3",
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "android",
+                                                                                    "architecture" : "x86_64"
+                                                                                  }, "run#91", {
+                                                                                    "id" : "run#3",
+                                                                                    "runTime" : 646,
+                                                                                    "test" : {
+                                                                                      "name" : "Test#10",
+                                                                                      "avgRunTime" : 373,
+                                                                                      "architectureCount" : 3,
+                                                                                      "platforms" : [ "windows" ],
+                                                                                      "testRuns" : [ {
+                                                                                        "id" : "run#29",
+                                                                                        "runTime" : 585,
+                                                                                        "test" : "Test#10",
+                                                                                        "device" : "windows-11-arm64",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "arm64"
+                                                                                      }, {
+                                                                                        "id" : "run#74",
+                                                                                        "runTime" : 646,
+                                                                                        "test" : "Test#10",
+                                                                                        "device" : "windows-1-x86_64",
+                                                                                        "platform" : "windows",
+                                                                                        "architecture" : "x86"
+                                                                                      }, "run#3" ]
+                                                                                    },
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "windows",
+                                                                                    "architecture" : "x86_64"
+                                                                                  }, {
+                                                                                    "id" : "run#80",
+                                                                                    "runTime" : 748,
+                                                                                    "test" : "Test#19",
+                                                                                    "device" : "windows-1-x86_64",
+                                                                                    "platform" : "windows",
+                                                                                    "architecture" : "x86"
+                                                                                  }, "run#74" ]
+                                                                                },
+                                                                                "platform" : "windows",
+                                                                                "architecture" : "x86_64"
+                                                                              } ]
+                                                                            },
+                                                                            "device" : "linux-2-arm64ec",
+                                                                            "platform" : "android",
+                                                                            "architecture" : "arm64ec"
+                                                                          }, {
+                                                                            "id" : "run#39",
+                                                                            "runTime" : 0,
+                                                                            "test" : null,
+                                                                            "device" : "linux-2-arm64ec",
+                                                                            "platform" : "windows",
+                                                                            "architecture" : "arm64ec"
+                                                                          }, {
+                                                                            "id" : "run#50",
+                                                                            "runTime" : 238,
+                                                                            "test" : {
+                                                                              "name" : "Test#17",
+                                                                              "avgRunTime" : 303,
+                                                                              "architectureCount" : 5,
+                                                                              "platforms" : [ "linux" ],
+                                                                              "testRuns" : [ {
+                                                                                "id" : "run#17",
+                                                                                "runTime" : 233,
+                                                                                "test" : "Test#17",
+                                                                                "device" : "linux-8-x86_64",
+                                                                                "platform" : "linux",
+                                                                                "architecture" : "x86_64"
+                                                                              }, {
+                                                                                "id" : "run#34",
+                                                                                "runTime" : 246,
+                                                                                "test" : "Test#17",
+                                                                                "device" : "linux-9-thumb",
+                                                                                "platform" : "linux",
+                                                                                "architecture" : "arm"
+                                                                              }, {
+                                                                                "id" : "run#92",
+                                                                                "runTime" : 233,
+                                                                                "test" : "Test#17",
+                                                                                "device" : "linux-8-x86_64",
+                                                                                "platform" : "linux",
+                                                                                "architecture" : "x86"
+                                                                              }, "run#50" ]
+                                                                            },
+                                                                            "device" : "linux-2-arm64ec",
+                                                                            "platform" : "linux",
+                                                                            "architecture" : "arm64ec"
+                                                                          }, {
+                                                                            "id" : "run#31",
+                                                                            "runTime" : 293,
+                                                                            "test" : "Test#7",
+                                                                            "device" : "linux-2-arm64ec",
+                                                                            "platform" : "android",
+                                                                            "architecture" : "arm64ec"
+                                                                          }, {
+                                                                            "id" : "run#30",
+                                                                            "runTime" : 383,
+                                                                            "test" : "Test#6",
+                                                                            "device" : "linux-2-arm64ec",
+                                                                            "platform" : "linux",
+                                                                            "architecture" : "arm64ec"
+                                                                          }, "run#47", "run#36", "run#6", {
+                                                                            "id" : "run#45",
+                                                                            "runTime" : 0,
+                                                                            "test" : null,
+                                                                            "device" : "linux-2-arm64ec",
+                                                                            "platform" : "android",
+                                                                            "architecture" : "x86"
+                                                                          }, "run#69" ]
+                                                                        },
+                                                                        "platform" : "android",
+                                                                        "architecture" : "arm64ec"
+                                                                      }, "run#26", "run#83", "run#96" ]
+                                                                    },
+                                                                    "device" : "windows-6-x86",
+                                                                    "platform" : "android",
+                                                                    "architecture" : "x86"
+                                                                  }, "run#33", "run#48", "run#19", "run#58" ]
+                                                                },
+                                                                "platform" : "windows",
+                                                                "architecture" : "x86"
+                                                              }, "run#61", "run#4" ]
+                                                            },
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          }, {
+                                                            "id" : "run#68",
+                                                            "runTime" : 191,
+                                                            "test" : {
+                                                              "name" : "Test#18",
+                                                              "avgRunTime" : 142,
+                                                              "architectureCount" : 1,
+                                                              "platforms" : [ "ios" ],
+                                                              "testRuns" : [ "run#68" ]
+                                                            },
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          }, "run#85", {
+                                                            "id" : "run#27",
+                                                            "runTime" : 410,
+                                                            "test" : "Test#12",
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          }, {
+                                                            "id" : "run#95",
+                                                            "runTime" : 228,
+                                                            "test" : {
+                                                              "name" : "Test#4",
+                                                              "avgRunTime" : 169,
+                                                              "architectureCount" : 3,
+                                                              "platforms" : [ "osx", "ios" ],
+                                                              "testRuns" : [ {
+                                                                "id" : "run#63",
+                                                                "runTime" : 155,
+                                                                "test" : "Test#4",
+                                                                "device" : "osx-3-mips",
+                                                                "platform" : "osx",
+                                                                "architecture" : "mips"
+                                                              }, "run#95", {
+                                                                "id" : "run#20",
+                                                                "runTime" : 201,
+                                                                "test" : "Test#4",
+                                                                "device" : "osx-7-thumb",
+                                                                "platform" : "osx",
+                                                                "architecture" : "thumb"
+                                                              } ]
+                                                            },
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          }, {
+                                                            "id" : "run#73",
+                                                            "runTime" : 174,
+                                                            "test" : "Test#22",
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          }, {
+                                                            "id" : "run#65",
+                                                            "runTime" : 582,
+                                                            "test" : "Test#19",
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          }, {
+                                                            "id" : "run#7",
+                                                            "runTime" : 292,
+                                                            "test" : {
+                                                              "name" : "Test#24",
+                                                              "avgRunTime" : 217,
+                                                              "architectureCount" : 1,
+                                                              "platforms" : [ "ios" ],
+                                                              "testRuns" : [ "run#7" ]
+                                                            },
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          }, "run#62", {
+                                                            "id" : "run#52",
+                                                            "runTime" : 484,
+                                                            "test" : {
+                                                              "name" : "Test#14",
+                                                              "avgRunTime" : 359,
+                                                              "architectureCount" : 1,
+                                                              "platforms" : [ "ios" ],
+                                                              "testRuns" : [ "run#52" ]
+                                                            },
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          }, "run#79", {
+                                                            "id" : "run#18",
+                                                            "runTime" : 213,
+                                                            "test" : {
+                                                              "name" : "Test#2",
+                                                              "avgRunTime" : 158,
+                                                              "architectureCount" : 1,
+                                                              "platforms" : [ "ios" ],
+                                                              "testRuns" : [ "run#18" ]
+                                                            },
+                                                            "device" : "ios-4-arm",
+                                                            "platform" : "ios",
+                                                            "architecture" : "arm"
+                                                          } ]
+                                                        },
+                                                        "platform" : "ios",
+                                                        "architecture" : "arm"
+                                                      } ]
+                                                    },
+                                                    "device" : "osx-3-mips",
+                                                    "platform" : "osx",
+                                                    "architecture" : "mips"
+                                                  }, "run#63", "run#99", {
+                                                    "id" : "run#9",
+                                                    "runTime" : 343,
+                                                    "test" : "Test#7",
+                                                    "device" : "osx-3-mips",
+                                                    "platform" : "osx",
+                                                    "architecture" : "mips"
+                                                  }, {
+                                                    "id" : "run#97",
+                                                    "runTime" : 0,
+                                                    "test" : null,
+                                                    "device" : "osx-3-mips",
+                                                    "platform" : "osx",
+                                                    "architecture" : "arm64ec"
+                                                  }, "run#53", {
+                                                    "id" : "run#41",
+                                                    "runTime" : 114,
+                                                    "test" : {
+                                                      "name" : "Test#25",
+                                                      "avgRunTime" : 124,
+                                                      "architectureCount" : 2,
+                                                      "platforms" : [ "osx" ],
+                                                      "testRuns" : [ "run#41", {
+                                                        "id" : "run#86",
+                                                        "runTime" : 148,
+                                                        "test" : "Test#25",
+                                                        "device" : "osx-7-thumb",
+                                                        "platform" : "osx",
+                                                        "architecture" : "thumb"
+                                                      } ]
+                                                    },
+                                                    "device" : "osx-3-mips",
+                                                    "platform" : "osx",
+                                                    "architecture" : "mips"
+                                                  }, {
+                                                    "id" : "run#23",
+                                                    "runTime" : 162,
+                                                    "test" : {
+                                                      "name" : "Test#21",
+                                                      "avgRunTime" : 176,
+                                                      "architectureCount" : 2,
+                                                      "platforms" : [ "osx" ],
+                                                      "testRuns" : [ {
+                                                        "id" : "run#24",
+                                                        "runTime" : 210,
+                                                        "test" : "Test#21",
+                                                        "device" : "osx-7-thumb",
+                                                        "platform" : "osx",
+                                                        "architecture" : "thumb"
+                                                      }, "run#23" ]
+                                                    },
+                                                    "device" : "osx-3-mips",
+                                                    "platform" : "osx",
+                                                    "architecture" : "mips"
+                                                  }, {
+                                                    "id" : "run#14",
+                                                    "runTime" : 453,
+                                                    "test" : {
+                                                      "name" : "Test#8",
+                                                      "avgRunTime" : 493,
+                                                      "architectureCount" : 2,
+                                                      "platforms" : [ "osx" ],
+                                                      "testRuns" : [ "run#14", {
+                                                        "id" : "run#81",
+                                                        "runTime" : 587,
+                                                        "test" : "Test#8",
+                                                        "device" : "osx-7-thumb",
+                                                        "platform" : "osx",
+                                                        "architecture" : "thumb"
+                                                      } ]
+                                                    },
+                                                    "device" : "osx-3-mips",
+                                                    "platform" : "osx",
+                                                    "architecture" : "mips"
+                                                  } ]
+                                                },
+                                                "platform" : "osx",
+                                                "architecture" : "mips"
+                                              }, "run#72", "run#87", "run#73", "run#84", "run#11" ]
+                                            },
+                                            "device" : "osx-7-thumb",
+                                            "platform" : "osx",
+                                            "architecture" : "thumb"
+                                          }, "run#86", "run#75", "run#20", "run#81", {
+                                            "id" : "run#10",
+                                            "runTime" : 444,
+                                            "test" : "Test#7",
+                                            "device" : "osx-7-thumb",
+                                            "platform" : "osx",
+                                            "architecture" : "thumb"
+                                          }, "run#24", "run#59", {
+                                            "id" : "run#55",
+                                            "runTime" : 235,
+                                            "test" : "Test#5",
+                                            "device" : "osx-7-thumb",
+                                            "platform" : "osx",
+                                            "architecture" : "thumb"
+                                          }, "run#71" ]
+                                        },
+                                        "platform" : "osx",
+                                        "architecture" : "thumb"
+                                      }, "run#30", {
+                                        "id" : "run#15",
+                                        "runTime" : 765,
+                                        "test" : "Test#6",
+                                        "device" : "windows-11-arm64",
+                                        "platform" : "android",
+                                        "architecture" : "arm64"
+                                      } ]
+                                    },
+                                    "device" : "linux-9-thumb",
+                                    "platform" : "linux",
+                                    "architecture" : "arm"
+                                  }, "run#16", "run#54", "run#34", {
+                                    "id" : "run#44",
+                                    "runTime" : 160,
+                                    "test" : "Test#5",
+                                    "device" : "linux-9-thumb",
+                                    "platform" : "linux",
+                                    "architecture" : "arm"
+                                  } ]
+                                },
+                                "platform" : "linux",
+                                "architecture" : "thumb"
+                              }, {
+                                "id" : "run#5",
+                                "runTime" : 233,
+                                "test" : "Test#12",
+                                "device" : "linux-8-x86_64",
+                                "platform" : "linux",
+                                "architecture" : "x86_64"
+                              }, "run#27", "run#28" ]
+                            },
+                            "device" : "linux-8-x86_64",
+                            "platform" : "linux",
+                            "architecture" : "x86"
+                          }, {
+                            "id" : "run#101",
+                            "runTime" : 151,
+                            "test" : "Test#5",
+                            "device" : "linux-8-x86_64",
+                            "platform" : "linux",
+                            "architecture" : "x86_64"
+                          }, {
+                            "id" : "run#93",
+                            "runTime" : 0,
+                            "test" : null,
+                            "device" : "linux-8-x86_64",
+                            "platform" : "ios",
+                            "architecture" : "x86_64"
+                          }, {
+                            "id" : "run#67",
+                            "runTime" : 0,
+                            "test" : null,
+                            "device" : "linux-8-x86_64",
+                            "platform" : "android",
+                            "architecture" : "arm"
+                          }, "run#5", "run#92", "run#43", "run#78", "run#17", "run#98" ]
+                        },
+                        "platform" : "linux",
+                        "architecture" : "x86"
+                      }, "run#44", "run#70", "run#38", "run#55", "run#101" ]
+                    },
+                    "device" : "windows-11-arm64",
+                    "platform" : "windows",
+                    "architecture" : "arm64"
+                  }, "run#29", "run#35", "run#56", "run#82", "run#12", "run#8", "run#100", "run#2", "run#15", "run#77", {
+                    "id" : "run#60",
+                    "runTime" : 585,
+                    "test" : "Test#7",
+                    "device" : "windows-11-arm64",
+                    "platform" : "android",
+                    "architecture" : "arm64"
+                  } ]
+                },
+                "platform" : "windows",
+                "architecture" : "arm64"
+              }, "run#80", "run#65", "run#88" ]
+            },
+            "device" : "android-12-x86",
+            "platform" : "android",
+            "architecture" : "x86"
+          } ]
+        },
+        "platform" : "android",
+        "architecture" : "x86"
+      }, "run#21", "run#9", "run#60", "run#57", "run#1", "run#10", "run#31" ]
+    },
+    "device" : "android-12-x86",
+    "platform" : "android",
+    "architecture" : "x86"
+  }, "run#2", "run#3", "run#4", "run#5", "run#6", "run#7", "run#8", "run#9", "run#10", "run#11", "run#12", "run#13", "run#14", "run#15", "run#16", "run#17", "run#18", "run#19", "run#20", "run#21", "run#22", "run#23", "run#24", "run#25", "run#26", "run#27", "run#28", "run#29", "run#30", "run#31", "run#32", "run#33", "run#34", "run#35", "run#36", "run#37", "run#38", "run#39", "run#40", "run#41", "run#42", "run#43", "run#44", "run#45", "run#46", "run#47", "run#48", "run#49", "run#50", "run#51", "run#52", "run#53", "run#54", "run#55", "run#56", "run#57", "run#58", "run#59", "run#60", "run#61", "run#62", "run#63", "run#64", "run#65", "run#66", "run#67", "run#68", "run#69", "run#70", "run#71", "run#72", "run#73", "run#74", "run#75", "run#76", "run#77", "run#78", "run#79", "run#80", "run#81", "run#82", "run#83", "run#84", "run#85", "run#86", "run#87", "run#88", "run#89", "run#90", "run#91", "run#92", "run#93", "run#94", "run#95", "run#96", "run#97", "run#98", "run#99", "run#100", "run#101", "run#102" ],
+  "tests" : [ "Test#1", "Test#2", "Test#3", "Test#4", "Test#5", "Test#6", "Test#7", "Test#8", "Test#9", "Test#10", "Test#11", "Test#12", "Test#13", "Test#14", "Test#15", "Test#16", "Test#17", "Test#18", "Test#19", "Test#20", "Test#21", "Test#22", "Test#23", "Test#24", "Test#25" ],
+  "devices" : [ "windows-1-x86_64", "linux-2-arm64ec", "osx-3-mips", "ios-4-arm", "android-5-arm", "windows-6-x86", "osx-7-thumb", "linux-8-x86_64", "linux-9-thumb", "android-10-x86_64", "windows-11-arm64", "android-12-x86" ],
+  "platforms" : [ "windows", "linux", "osx", "ios", "android" ],
+  "architectures" : [ "x86_64", "x86", "arm", "thumb", "arm64", "arm64ec", "mips" ]
+}

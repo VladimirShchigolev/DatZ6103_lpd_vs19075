@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><plannerBenchmarkResult>
+  <name>2024-01-21_210946</name>
+  <aggregation>false</aggregation>
+  <availableProcessors>12</availableProcessors>
+  <loggingLevelTimefoldSolverCore>INFO</loggingLevelTimefoldSolverCore>
+  <maxMemory>4255121408</maxMemory>
+  <timefoldSolverVersion>Community Edition v1.6.0</timefoldSolverVersion>
+  <javaVersion>Java 17.0.2 (Oracle Corporation)</javaVersion>
+  <javaVM>Java Java HotSpot(TM) 64-Bit Server VM 17.0.2+8-LTS-86 (Oracle Corporation)</javaVM>
+  <operatingSystem>Windows 10 amd64 10.0</operatingSystem>
+  <parallelBenchmarkCount>1</parallelBenchmarkCount>
+  <warmUpTimeMillisSpentLimit>30</warmUpTimeMillisSpentLimit>
+  <solverBenchmarkResult>
+    <name>Config_0</name>
+    <subSingleCount>1</subSingleCount>
+    <solverConfig>
+      <environmentMode>FULL_ASSERT</environmentMode>
+      <monitoring>
+        <metric>BEST_SCORE</metric>
+      </monitoring>
+      <solutionClass>lv.lu.df.combopt.domain.TestingSchedule</solutionClass>
+      <entityClass>lv.lu.df.combopt.domain.TestRun</entityClass>
+      <entityClass>lv.lu.df.combopt.domain.Device</entityClass>
+      <entityClass>lv.lu.df.combopt.domain.Test</entityClass>
+      <scoreDirectorFactory>
+        <constraintProviderClass>lv.lu.df.combopt.solver.StreamCalculator</constraintProviderClass>
+      </scoreDirectorFactory>
+      <termination>
+        <secondsSpentLimit>10</secondsSpentLimit>
+      </termination>
+      <constructionHeuristic/>
+      <localSearch>
+        <unionMoveSelector>
+          <changeMoveSelector/>
+          <swapMoveSelector>
+            <entitySelector/>
+            <variableNameIncludes>
+              <variableNameInclude>device</variableNameInclude>
+            </variableNameIncludes>
+          </swapMoveSelector>
+        </unionMoveSelector>
+      </localSearch>
+    </solverConfig>
+    <singleBenchmarkResult id="1">
+      <subSingleBenchmarkResult>
+        <subSingleBenchmarkIndex>0</subSingleBenchmarkIndex>
+        <usedMemoryAfterInputSolution>6947152</usedMemoryAfterInputSolution>
+        <succeeded>true</succeeded>
+        <score class="ai.timefold.solver.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore">-108init/13hard/20medium/1049soft</score>
+        <timeMillisSpent>10005</timeMillisSpent>
+        <scoreCalculationCount>365214</scoreCalculationCount>
+        <scoreExplanationSummary>Explanation of score (-108init/13hard/20medium/1049soft):
+    Constraint matches:
+        -8hard: constraint (Unchecked Test (Unchecked all Platforms)) has 1 matches:
+            -8hard: justified with ([Test#8 [ios, osx]])
+        -4hard: constraint (Unchecked Platforms) has 19 matches:
+            -4hard: justified with ([Test#18 [ios, windows], 1])
+            0: justified with ([Test#2 [windows], 1])
+            ...
+        0: constraint (Time Limit Exceeded) has 4 matches:
+            0: justified with ([windows-1-arm, 1436])
+            0: justified with ([linux-2-x86, 1230])
+            ...
+        0: constraint (Wrong Test Architecture (Device does not support it)) has 0 matches:
+        0: constraint (Wrong Test Platform (Device does not support it)) has 0 matches:
+        0: constraint (Wrong Test Platform (Test does not support it)) has 0 matches:
+        1049soft: constraint (Test Architecture Cover) has 19 matches:
+            20soft: justified with ([Test#6 [ios], 20])
+            20soft: justified with ([Test#17 [ios], 20])
+            ...
+        20medium: constraint (Minimal Architecture Cover) has 1 matches:
+            20medium: justified with ([Minimal Architecture Cover, 20])
+        25hard: constraint (Reward Test Run) has 25 matches:
+            1hard: justified with ([run#1{windows-1-arm, Test#2, windows, arm}])
+            1hard: justified with ([run#2{windows-1-arm, Test#4, windows, arm}])
+            ...
+    Indictments (top 5 of 63):
+        -8hard: indicted with (Test#8 [ios, osx]) has 1 matches:
+            -8hard: constraint (Unchecked Test (Unchecked all Platforms))
+        -4hard: indicted with (1) has 14 matches:
+            -4hard: constraint (Unchecked Platforms)
+            0: constraint (Unchecked Platforms)
+            ...
+        -4hard/20soft: indicted with (Test#18 [ios, windows]) has 2 matches:
+            -4hard: constraint (Unchecked Platforms)
+            20soft: constraint (Test Architecture Cover)
+        0: indicted with (2) has 4 matches:
+            0: constraint (Unchecked Platforms)
+            0: constraint (Unchecked Platforms)
+            ...
+        0: indicted with (3) has 1 matches:
+            0: constraint (Unchecked Platforms)
+        ...
+</scoreExplanationSummary>
+      </subSingleBenchmarkResult>
+      <timeMillisSpent>-1</timeMillisSpent>
+      <scoreCalculationCount>-1</scoreCalculationCount>
+    </singleBenchmarkResult>
+  </solverBenchmarkResult>
+  <unifiedProblemBenchmarkResult>
+    <name>Problem_0</name>
+    <instanceProblemProvider/>
+    <writeOutputSolutionEnabled>false</writeOutputSolutionEnabled>
+    <bestScoreProblemStatistic>
+      <problemStatisticType>BEST_SCORE</problemStatisticType>
+    </bestScoreProblemStatistic>
+    <singleBenchmarkResult>1</singleBenchmarkResult>
+    <entityCount>61</entityCount>
+    <variableCount>244</variableCount>
+    <maximumValueCount>21</maximumValueCount>
+    <problemScale>448350</problemScale>
+    <inputSolutionLoadingTimeMillisSpent>0</inputSolutionLoadingTimeMillisSpent>
+  </unifiedProblemBenchmarkResult>
+  <startingTimestamp>2024-01-21T21:09:46.1453679+02:00</startingTimestamp>
+  <benchmarkTimeMillisSpent>10261</benchmarkTimeMillisSpent>
+</plannerBenchmarkResult>

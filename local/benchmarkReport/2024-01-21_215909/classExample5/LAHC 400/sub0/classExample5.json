@@ -1,0 +1,176 @@
+{
+  "solutionId" : null,
+  "timeLimit" : 1500,
+  "score" : "0hard/100medium/500soft",
+  "testRuns" : [ {
+    "id" : "run#1",
+    "runTime" : 250,
+    "test" : {
+      "name" : "Test#4",
+      "avgRunTime" : 257,
+      "architectureCount" : 1,
+      "platforms" : [ {
+        "name" : "linux"
+      } ],
+      "testRuns" : [ "run#1" ]
+    },
+    "device" : {
+      "name" : "linux-2-arm64ec",
+      "compSpeed" : 1.026529850594644,
+      "timeLimit" : 1500,
+      "platforms" : [ "linux", {
+        "name" : "android"
+      } ],
+      "architectures" : [ {
+        "name" : "arm64ec"
+      } ],
+      "testRuns" : [ "run#1", {
+        "id" : "run#3",
+        "runTime" : 401,
+        "test" : {
+          "name" : "Test#3",
+          "avgRunTime" : 412,
+          "architectureCount" : 2,
+          "platforms" : [ {
+            "name" : "osx"
+          }, "linux" ],
+          "testRuns" : [ {
+            "id" : "run#2",
+            "runTime" : 301,
+            "test" : "Test#3",
+            "device" : {
+              "name" : "osx-3-x86",
+              "compSpeed" : 1.3673530007475332,
+              "timeLimit" : 1500,
+              "platforms" : [ "osx", {
+                "name" : "ios"
+              } ],
+              "architectures" : [ {
+                "name" : "x86"
+              } ],
+              "testRuns" : [ "run#2", {
+                "id" : "run#4",
+                "runTime" : 358,
+                "test" : {
+                  "name" : "Test#5",
+                  "avgRunTime" : 490,
+                  "architectureCount" : 2,
+                  "platforms" : [ "osx", "linux" ],
+                  "testRuns" : [ "run#4", {
+                    "id" : "run#5",
+                    "runTime" : 477,
+                    "test" : "Test#5",
+                    "device" : "linux-2-arm64ec",
+                    "platform" : "linux",
+                    "architecture" : "arm64ec"
+                  } ]
+                },
+                "device" : "osx-3-x86",
+                "platform" : "osx",
+                "architecture" : "x86"
+              }, {
+                "id" : "run#6",
+                "runTime" : 321,
+                "test" : {
+                  "name" : "Test#2",
+                  "avgRunTime" : 439,
+                  "architectureCount" : 2,
+                  "platforms" : [ "ios" ],
+                  "testRuns" : [ "run#6", {
+                    "id" : "run#11",
+                    "runTime" : 323,
+                    "test" : "Test#2",
+                    "device" : {
+                      "name" : "ios-4-arm",
+                      "compSpeed" : 1.360717569503909,
+                      "timeLimit" : 1500,
+                      "platforms" : [ "ios" ],
+                      "architectures" : [ {
+                        "name" : "arm"
+                      } ],
+                      "testRuns" : [ {
+                        "id" : "run#8",
+                        "runTime" : 165,
+                        "test" : {
+                          "name" : "Test#1",
+                          "avgRunTime" : 224,
+                          "architectureCount" : 4,
+                          "platforms" : [ "ios", "osx", {
+                            "name" : "windows"
+                          }, "android" ],
+                          "testRuns" : [ {
+                            "id" : "run#7",
+                            "runTime" : 164,
+                            "test" : "Test#1",
+                            "device" : "osx-3-x86",
+                            "platform" : "osx",
+                            "architecture" : "x86"
+                          }, "run#8", {
+                            "id" : "run#9",
+                            "runTime" : 167,
+                            "test" : "Test#1",
+                            "device" : {
+                              "name" : "windows-1-arm64ec",
+                              "compSpeed" : 1.337436099323308,
+                              "timeLimit" : 1500,
+                              "platforms" : [ "windows", "android" ],
+                              "architectures" : [ "arm64ec" ],
+                              "testRuns" : [ "run#9" ]
+                            },
+                            "platform" : "windows",
+                            "architecture" : "arm64ec"
+                          }, {
+                            "id" : "run#10",
+                            "runTime" : 167,
+                            "test" : "Test#1",
+                            "device" : {
+                              "name" : "android-5-mips",
+                              "compSpeed" : 1.3386072702478402,
+                              "timeLimit" : 1500,
+                              "platforms" : [ "android" ],
+                              "architectures" : [ {
+                                "name" : "mips"
+                              } ],
+                              "testRuns" : [ "run#10" ]
+                            },
+                            "platform" : "android",
+                            "architecture" : "mips"
+                          } ]
+                        },
+                        "device" : "ios-4-arm",
+                        "platform" : "ios",
+                        "architecture" : "arm"
+                      }, "run#11" ]
+                    },
+                    "platform" : "ios",
+                    "architecture" : "arm"
+                  } ]
+                },
+                "device" : "osx-3-x86",
+                "platform" : "ios",
+                "architecture" : "x86"
+              }, "run#7" ]
+            },
+            "platform" : "osx",
+            "architecture" : "x86"
+          }, "run#3" ]
+        },
+        "device" : "linux-2-arm64ec",
+        "platform" : "linux",
+        "architecture" : "arm64ec"
+      }, "run#5" ]
+    },
+    "platform" : "linux",
+    "architecture" : "arm64ec"
+  }, "run#2", "run#3", "run#4", "run#5", "run#6", "run#7", "run#8", "run#9", "run#10", "run#11" ],
+  "tests" : [ "Test#1", "Test#2", "Test#3", "Test#4", "Test#5" ],
+  "devices" : [ "windows-1-arm64ec", "linux-2-arm64ec", "osx-3-x86", "ios-4-arm", "android-5-mips" ],
+  "platforms" : [ "windows", "linux", "osx", "ios", "android" ],
+  "architectures" : [ {
+    "name" : "x86_64"
+  }, "x86", "arm", {
+    "name" : "thumb"
+  }, {
+    "name" : "arm64"
+  }, "arm64ec", "mips" ]
+}
