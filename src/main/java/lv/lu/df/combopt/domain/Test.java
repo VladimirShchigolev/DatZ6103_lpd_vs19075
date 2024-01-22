@@ -19,11 +19,11 @@ public class Test {
     private Integer avgRunTime;
     private Integer architectureCount;
 
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private Set<Platform> platforms = new HashSet<Platform>();
 
     @InverseRelationShadowVariable(sourceVariableName = "test")
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private List<TestRun> testRuns = new ArrayList<>();
 
     @Override

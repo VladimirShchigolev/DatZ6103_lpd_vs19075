@@ -15,7 +15,7 @@
 
     <!-- Configure the optimization algorithms (optional) -->
     <termination>
-        <secondsSpentLimit>5</secondsSpentLimit>
+        <secondsSpentLimit>10</secondsSpentLimit>
     </termination>
 
     <constructionHeuristic />
@@ -30,8 +30,21 @@
                 <variableNameIncludes>
                     <variableNameInclude>device</variableNameInclude>
                 </variableNameIncludes>
-
+            </swapMoveSelector>
+            <swapMoveSelector>
+                <entitySelector>
+                    <entityClass>TestRun</entityClass>
+                </entitySelector>
+                <variableNameIncludes>
+                    <variableNameInclude>test</variableNameInclude>
+                </variableNameIncludes>
             </swapMoveSelector>
         </unionMoveSelector>
+        <acceptor>
+            <lateAcceptanceSize>400</lateAcceptanceSize>
+        </acceptor>
+        <forager>
+            <acceptedCountLimit>1</acceptedCountLimit>
+        </forager>
     </localSearch>
 </solver>

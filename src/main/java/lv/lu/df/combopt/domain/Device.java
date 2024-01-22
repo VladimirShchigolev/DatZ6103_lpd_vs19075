@@ -22,13 +22,13 @@ public class Device {
     private Double compSpeed;
     private Integer timeLimit;
 
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private List<Platform> platforms = new ArrayList<>();
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private List<Architecture> architectures = new ArrayList<>();
 
     @InverseRelationShadowVariable(sourceVariableName = "device")
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private List<TestRun> testRuns = new ArrayList<>();
 
     @Override

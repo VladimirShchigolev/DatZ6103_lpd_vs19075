@@ -1,0 +1,176 @@
+{
+  "solutionId" : 1,
+  "timeLimit" : 1500,
+  "score" : null,
+  "testRuns" : [ {
+    "id" : "run#1",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#2",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#3",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#4",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#5",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#6",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#7",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#8",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#9",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#10",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#11",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  } ],
+  "tests" : [ {
+    "name" : "Test#1",
+    "avgRunTime" : 224,
+    "architectureCount" : 4,
+    "platforms" : [ {
+      "name" : "osx"
+    }, {
+      "name" : "android"
+    }, {
+      "name" : "windows"
+    }, {
+      "name" : "ios"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#2",
+    "avgRunTime" : 439,
+    "architectureCount" : 2,
+    "platforms" : [ "ios" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#3",
+    "avgRunTime" : 412,
+    "architectureCount" : 2,
+    "platforms" : [ "osx", {
+      "name" : "linux"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#4",
+    "avgRunTime" : 257,
+    "architectureCount" : 1,
+    "platforms" : [ "linux" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#5",
+    "avgRunTime" : 490,
+    "architectureCount" : 2,
+    "platforms" : [ "osx", "linux" ],
+    "testRuns" : [ ]
+  } ],
+  "devices" : [ {
+    "name" : "windows-1-arm64ec",
+    "compSpeed" : 1.337436099323308,
+    "timeLimit" : 1500,
+    "platforms" : [ "windows", "android" ],
+    "architectures" : [ {
+      "name" : "arm64ec"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "linux-2-arm64ec",
+    "compSpeed" : 1.026529850594644,
+    "timeLimit" : 1500,
+    "platforms" : [ "linux", "android" ],
+    "architectures" : [ "arm64ec" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "osx-3-x86",
+    "compSpeed" : 1.3673530007475332,
+    "timeLimit" : 1500,
+    "platforms" : [ "osx", "ios" ],
+    "architectures" : [ {
+      "name" : "x86"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "ios-4-arm",
+    "compSpeed" : 1.360717569503909,
+    "timeLimit" : 1500,
+    "platforms" : [ "ios" ],
+    "architectures" : [ {
+      "name" : "arm"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "android-5-mips",
+    "compSpeed" : 1.3386072702478402,
+    "timeLimit" : 1500,
+    "platforms" : [ "android" ],
+    "architectures" : [ {
+      "name" : "mips"
+    } ],
+    "testRuns" : [ ]
+  } ],
+  "platforms" : [ "windows", "linux", "osx", "ios", "android" ],
+  "architectures" : [ {
+    "name" : "x86_64"
+  }, "x86", "arm", {
+    "name" : "thumb"
+  }, {
+    "name" : "arm64"
+  }, "arm64ec", "mips" ]
+}

@@ -22,19 +22,19 @@ public class TestRun {
     private Integer runTime = 0;
 
     @PlanningVariable(valueRangeProviderRefs = "tests", nullable = true)
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private Test test;
 
     @PlanningVariable(valueRangeProviderRefs = "devices")
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private Device device;
 
     @PlanningVariable(valueRangeProviderRefs = "platforms")
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private Platform platform;
 
     @PlanningVariable(valueRangeProviderRefs = "architectures")
-    @JsonIdentityReference
+    @JsonIdentityReference(alwaysAsId = true)
     private Architecture architecture;
 
     @Override

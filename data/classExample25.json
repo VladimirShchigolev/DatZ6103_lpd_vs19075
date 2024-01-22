@@ -1,0 +1,982 @@
+{
+  "solutionId" : 4,
+  "timeLimit" : 7500,
+  "score" : null,
+  "testRuns" : [ {
+    "id" : "run#1",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#2",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#3",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#4",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#5",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#6",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#7",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#8",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#9",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#10",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#11",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#12",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#13",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#14",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#15",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#16",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#17",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#18",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#19",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#20",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#21",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#22",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#23",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#24",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#25",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#26",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#27",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#28",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#29",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#30",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#31",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#32",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#33",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#34",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#35",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#36",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#37",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#38",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#39",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#40",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#41",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#42",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#43",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#44",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#45",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#46",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#47",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#48",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#49",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#50",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#51",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#52",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#53",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#54",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#55",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#56",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#57",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#58",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#59",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#60",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#61",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#62",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#63",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#64",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#65",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#66",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#67",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#68",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#69",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#70",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#71",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#72",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#73",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#74",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#75",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#76",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#77",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#78",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#79",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#80",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#81",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#82",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#83",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#84",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#85",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#86",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#87",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#88",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#89",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#90",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#91",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#92",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#93",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#94",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#95",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#96",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#97",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#98",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#99",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#100",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#101",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  }, {
+    "id" : "run#102",
+    "runTime" : 0,
+    "test" : null,
+    "device" : null,
+    "platform" : null,
+    "architecture" : null
+  } ],
+  "tests" : [ {
+    "name" : "Test#1",
+    "avgRunTime" : 259,
+    "architectureCount" : 4,
+    "platforms" : [ {
+      "name" : "ios"
+    }, {
+      "name" : "windows"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#2",
+    "avgRunTime" : 158,
+    "architectureCount" : 1,
+    "platforms" : [ "ios" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#3",
+    "avgRunTime" : 151,
+    "architectureCount" : 5,
+    "platforms" : [ {
+      "name" : "android"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#4",
+    "avgRunTime" : 169,
+    "architectureCount" : 3,
+    "platforms" : [ "ios", {
+      "name" : "osx"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#5",
+    "avgRunTime" : 197,
+    "architectureCount" : 7,
+    "platforms" : [ {
+      "name" : "linux"
+    }, "windows", "osx" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#6",
+    "avgRunTime" : 488,
+    "architectureCount" : 7,
+    "platforms" : [ "linux", "osx", "android" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#7",
+    "avgRunTime" : 373,
+    "architectureCount" : 7,
+    "platforms" : [ "osx", "android" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#8",
+    "avgRunTime" : 493,
+    "architectureCount" : 2,
+    "platforms" : [ "osx" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#9",
+    "avgRunTime" : 393,
+    "architectureCount" : 5,
+    "platforms" : [ "windows", "android" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#10",
+    "avgRunTime" : 373,
+    "architectureCount" : 3,
+    "platforms" : [ "windows" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#11",
+    "avgRunTime" : 388,
+    "architectureCount" : 3,
+    "platforms" : [ "windows" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#12",
+    "avgRunTime" : 304,
+    "architectureCount" : 5,
+    "platforms" : [ "ios", "linux" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#13",
+    "avgRunTime" : 156,
+    "architectureCount" : 7,
+    "platforms" : [ "ios", "linux", "windows", "osx", "android" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#14",
+    "avgRunTime" : 359,
+    "architectureCount" : 1,
+    "platforms" : [ "ios" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#15",
+    "avgRunTime" : 179,
+    "architectureCount" : 5,
+    "platforms" : [ "windows", "android" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#16",
+    "avgRunTime" : 482,
+    "architectureCount" : 7,
+    "platforms" : [ "linux", "windows", "osx" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#17",
+    "avgRunTime" : 303,
+    "architectureCount" : 5,
+    "platforms" : [ "linux" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#18",
+    "avgRunTime" : 142,
+    "architectureCount" : 1,
+    "platforms" : [ "ios" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#19",
+    "avgRunTime" : 432,
+    "architectureCount" : 5,
+    "platforms" : [ "ios", "windows", "android" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#20",
+    "avgRunTime" : 352,
+    "architectureCount" : 3,
+    "platforms" : [ "ios", "osx" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#21",
+    "avgRunTime" : 176,
+    "architectureCount" : 2,
+    "platforms" : [ "osx" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#22",
+    "avgRunTime" : 129,
+    "architectureCount" : 7,
+    "platforms" : [ "ios", "linux", "osx", "android" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#23",
+    "avgRunTime" : 439,
+    "architectureCount" : 4,
+    "platforms" : [ "ios", "windows" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#24",
+    "avgRunTime" : 217,
+    "architectureCount" : 1,
+    "platforms" : [ "ios" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "Test#25",
+    "avgRunTime" : 124,
+    "architectureCount" : 2,
+    "platforms" : [ "osx" ],
+    "testRuns" : [ ]
+  } ],
+  "devices" : [ {
+    "name" : "windows-1-x86_64",
+    "compSpeed" : 0.5774340230323003,
+    "timeLimit" : 7500,
+    "platforms" : [ "windows", "android" ],
+    "architectures" : [ {
+      "name" : "x86_64"
+    }, {
+      "name" : "x86"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "linux-2-arm64ec",
+    "compSpeed" : 1.2746825082750446,
+    "timeLimit" : 7500,
+    "platforms" : [ "linux", "android" ],
+    "architectures" : [ {
+      "name" : "arm64ec"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "osx-3-mips",
+    "compSpeed" : 1.0878365381204436,
+    "timeLimit" : 7500,
+    "platforms" : [ "osx" ],
+    "architectures" : [ {
+      "name" : "mips"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "ios-4-arm",
+    "compSpeed" : 0.7419528755612252,
+    "timeLimit" : 7500,
+    "platforms" : [ "ios" ],
+    "architectures" : [ {
+      "name" : "arm"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "android-5-arm",
+    "compSpeed" : 0.5162555478559436,
+    "timeLimit" : 7500,
+    "platforms" : [ "android" ],
+    "architectures" : [ "arm" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "windows-6-x86",
+    "compSpeed" : 0.7761031264205067,
+    "timeLimit" : 7500,
+    "platforms" : [ "windows", "android" ],
+    "architectures" : [ "x86" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "osx-7-thumb",
+    "compSpeed" : 0.8395807131178397,
+    "timeLimit" : 7500,
+    "platforms" : [ "osx" ],
+    "architectures" : [ {
+      "name" : "thumb"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "linux-8-x86_64",
+    "compSpeed" : 1.3028546354250263,
+    "timeLimit" : 7500,
+    "platforms" : [ "linux" ],
+    "architectures" : [ "x86_64", "x86" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "linux-9-thumb",
+    "compSpeed" : 1.2302034981228074,
+    "timeLimit" : 7500,
+    "platforms" : [ "linux" ],
+    "architectures" : [ "thumb", "arm" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "android-10-x86_64",
+    "compSpeed" : 1.1433095189648674,
+    "timeLimit" : 7500,
+    "platforms" : [ "android" ],
+    "architectures" : [ "x86_64", "x86" ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "windows-11-arm64",
+    "compSpeed" : 0.6379317388827738,
+    "timeLimit" : 7500,
+    "platforms" : [ "windows", "android" ],
+    "architectures" : [ {
+      "name" : "arm64"
+    } ],
+    "testRuns" : [ ]
+  }, {
+    "name" : "android-12-x86",
+    "compSpeed" : 0.6285928462198465,
+    "timeLimit" : 7500,
+    "platforms" : [ "android" ],
+    "architectures" : [ "x86" ],
+    "testRuns" : [ ]
+  } ],
+  "platforms" : [ "windows", "linux", "osx", "ios", "android" ],
+  "architectures" : [ "x86_64", "x86", "arm", "thumb", "arm64", "arm64ec", "mips" ]
+}
