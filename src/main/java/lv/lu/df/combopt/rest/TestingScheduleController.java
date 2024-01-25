@@ -72,13 +72,16 @@ public class TestingScheduleController {
     @SuppressWarnings("removal")
     @PostConstruct
     public void init() {
-        TestingScheduleJsonIO testingScheduleJsonIO = new TestingScheduleJsonIO();
-        TestingSchedule problem25 = testingScheduleJsonIO.read(new File("data/classExample25.json"));
-        problem25.setSolutionId("1");
-        solverManager.solveAndListen(
-                problem25.getSolutionId(), id -> problem25, solution -> {
-                    solutionMap.put(solution.getSolutionId(), solution);
-                }
-        );
+        try {
+            TestingScheduleJsonIO testingScheduleJsonIO = new TestingScheduleJsonIO();
+            TestingSchedule problem25 = testingScheduleJsonIO.read(new File("data/classExample25.json"));
+            problem25.setSolutionId("1");
+            solverManager.solveAndListen(
+                    problem25.getSolutionId(), id -> problem25, solution -> {
+                        solutionMap.put(solution.getSolutionId(), solution);
+                    }
+            );
+        }
+        catch (Exception e) {};
     }
 }
